@@ -1,12 +1,23 @@
-import { Layoutprops } from '@/components/shared/schema/Layout'
-import React from 'react'
+import type React from "react";
+import { testSidebarItems } from "@/lib/data";
+import TestSidebar from "@/components/shared/test-sidebar";
+import TopBar from "@/components/report/TopBar";
 
-const layout = ({children}:Layoutprops) => {
+export default function ReportLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+
+
   return (
-    <div>
-        {children}
-    </div>
-  )
-}
+    <div className="flex flex-col w-full">
+      <TopBar />
+      <div className="flex">
+        <TestSidebar tests={testSidebarItems} />
 
-export default layout
+        <div className="flex-1 ">{children}</div>
+      </div>
+    </div>
+  );
+}
