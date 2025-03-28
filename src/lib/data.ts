@@ -245,10 +245,10 @@ export const testSidebarItems = [
 ]
 
 export const personalityTabs = [
-  { id: "personality", label: "Personality" },
-  { id: "characteristics", label: "Characteristics" },
-  { id: "strengths", label: "Strengths/ Weaknesses" },
-  { id: "work-style", label: "Work Style" },
+  { id: "Personality", label: "Personality" },
+  { id: "Characteristics", label: "Characteristics" },
+  { id: "StrengthWeaknes", label: "Strengths/ Weaknesses" },
+  { id: "WorkStyle", label: "WorkStyle" },
   { id: "preferences", label: "Preferences" },
   { id: "interaction", label: "Interpersonal Interaction" },
   { id: "culture", label: "Work Culture" },
@@ -606,3 +606,82 @@ export const personalityTypes = [
       "Determined and strategic, Commanders are natural leaders who confidently drive projects forward with efficiency and vision.",
   },
 ];
+
+export const personality_characteristics = [
+  {
+    "id": 1,
+    "title": "Strategic and Analytical",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 2,
+    "title": "Independent and Visionary",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 3,
+    "title": "Logical and Rational",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 4,
+    "title": "Goal Oriented and Determined",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 5,
+    "title": "Confident and Assertive",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const StrengthWeaknessData = [
+  {
+    "id": 1,
+    "title": "Strategic Thinking",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 2,
+    "title": "Problem Solving",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 3,
+    "title": "Independence",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 4,
+    "title": "Visionary Leadership",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 5,
+    "title": "Efficiency",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const WorkStyleData = [
+  {
+    "id": 1,
+    "title": "Strategic",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 2,
+    "title": "Analytical",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 3,
+    "title": "Independent",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 4,
+    "title": "Results Driven",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+]
