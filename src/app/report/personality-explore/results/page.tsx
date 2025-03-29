@@ -8,34 +8,35 @@ import { reportSections } from "@/components/report/personality-explore/ReportSe
 
 export default function ReportPage() {
   const [activeTab, setActiveTab] = useState("Personality");
-
   const ActiveSection = reportSections[activeTab] || null;
 
   return (
-    <div className="flex flex-col">
-      <div className="p-6">
-        <div className="mb-6 min-w-full">
+    <div className="flex flex-col max-w-full overflow-x-auto">
+      <div className="px-4 w-full">
+        <div className="mb-6">
           <h2 className="mb-4 text-xl font-bold">Your Result</h2>
-          <TabNavigation
-            tabs={personalityTabs}
-            defaultTab="Personality"
-            onChange={setActiveTab}
-          />
+          <div className="w-full overflow-x-auto scrollbar-hide">
+            <TabNavigation
+              tabs={personalityTabs}
+              defaultTab="Personality"
+              onChange={setActiveTab}
+            />
+          </div>
         </div>
       </div>
-
-      {ActiveSection}
-
-      <div className="mt-auto border-t border-gray-200 p-4 text-center text-xs text-gray-500">
-        <div className="flex items-center justify-center space-x-4">
+      <div className="w-full overflow-x-hidden">
+        {ActiveSection}
+      </div>
+      <div className="mt-auto border-t border-gray-200 p-4 text-center text-xs text-gray-500 w-full">
+        <div className="flex items-center justify-center space-x-4 flex-wrap">
           <Link href="/privacy" className="hover:underline">
             Privacy Policy
           </Link>
-          <span>•</span>
+          <span className="hidden sm:inline">•</span>
           <Link href="/terms" className="hover:underline">
             Terms & Conditions
           </Link>
-          <span>•</span>
+          <span className="hidden sm:inline">•</span>
           <Link href="/support" className="hover:underline">
             Support
           </Link>

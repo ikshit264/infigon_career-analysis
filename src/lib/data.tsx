@@ -1,3 +1,5 @@
+import { ThumbsUp } from 'lucide-react';
+
 export const sidebarItems = [
   {
     id: "test1",
@@ -249,9 +251,14 @@ export const personalityTabs = [
   { id: "Characteristics", label: "Characteristics" },
   { id: "StrengthWeaknes", label: "Strengths/ Weaknesses" },
   { id: "WorkStyle", label: "WorkStyle" },
-  { id: "preferences", label: "Preferences" },
-  { id: "interaction", label: "Interpersonal Interaction" },
-  { id: "culture", label: "Work Culture" },
+  { id: "Preferences", label: "Preferences" },
+  { id: "InterPersonalInteraction", label: "Interpersonal Interaction" },
+  { id: "WorkCulture", label: "Work Culture" },
+  { id: "Roles", label: "Roles" },
+  { id: "CaseStudies", label: "Case Studies" },
+  // { id: "FamousPersonalities", label: "FamousPersonalities" },
+  // { id: "Recomendation", label: "Recomendation" },
+  { id: "Conclusion", label: "Conclusion" },
 ]
 
 export const careerOptions = [
@@ -685,3 +692,119 @@ export const WorkStyleData = [
     "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
   },
 ]
+
+export const PreferencesData = [
+  { title: "Intellectual Stimulation", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
+  { title: "TEST 2", content: "Interest Explorer" , icon: <ThumbsUp/> },
+  { title: "Autonomy", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
+  { title: "Innovation", content: "TEST 3", icon: <ThumbsUp/> },
+  { title: "Career Motivators", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
+  { title: "Efficiency", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> }
+];
+
+export const InterPersonalInteraction = [
+  {
+    "title": "Direct",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Assertive",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Reserved",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Objective",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Visionary",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const WorkCultureData = [
+  {
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const RoleData = [
+  {
+    "id": 1,
+    "title": "Strategic Planning and Management",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 2,
+    "title": "Research and Analysis",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 3,
+    "title": "Innovation and Technology",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "id": 4,
+    "title": "Leadership and Entrepreneurship",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const CaseStudiesData = [
+  {
+    "title": "Entrepreneurship",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Strategic Planing",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+]
+
+export const FamousPersonalitiesData = [
+  {
+    "title": "Famous Personalities",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Fitcional Characters",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+]
+
+export const RecomendationData = [
+  {
+    "title": "Flexibility",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Emotional Intelligence",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Collabaration",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  },
+  {
+    "title": "Patience",
+    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+  }
+]
+
+export const ConclussionData = 'You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real-world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths.'

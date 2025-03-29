@@ -24,8 +24,8 @@ export default function TabNavigation({ tabs, defaultTab, onChange }: TabNavigat
   }
 
   return (
-    <div className="border-b border-gray-200 w-full">
-      <div className="flex space-x-8">
+    <div className="border-b border-gray-200 max-w-full overflow-x-auto scrollbar-hide">
+      <div className="flex space-x-8 flex-nowrap whitespace-nowrap">
         {tabs.map((tab) => {
           const isActive = activeTab === tab.id
 
@@ -55,4 +55,3 @@ export default function TabNavigation({ tabs, defaultTab, onChange }: TabNavigat
     </div>
   )
 }
-
