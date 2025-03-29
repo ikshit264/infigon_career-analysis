@@ -24,7 +24,6 @@ interface TestSidebarProps {
 }
 
 export default function TestSidebar({ tests }: TestSidebarProps) {
-  const pathname = usePathname();
   const [activeTest, setActiveTest] = useState<number | null>(1);
   const [isOpen, setIsOpen] = useState(false); // Mobile toggle state
 
