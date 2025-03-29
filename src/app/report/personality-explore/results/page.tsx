@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { personalityTabs } from "@/lib/data";
 import TabNavigation from "@/components/shared/tab-navigation";
 import { reportSections } from "@/components/report/personality-explore/ReportSections";
