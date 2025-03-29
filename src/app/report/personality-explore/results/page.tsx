@@ -27,21 +27,6 @@ export default function ReportPage() {
       <div className="w-full overflow-x-hidden">
         {ActiveSection}
       </div>
-      <div className="mt-auto border-t border-gray-200 p-4 text-center text-xs text-gray-500 w-full">
-        <div className="flex items-center justify-center space-x-4 flex-wrap">
-          <Link href="/privacy" className="hover:underline">
-            Privacy Policy
-          </Link>
-          <span className="hidden sm:inline">•</span>
-          <Link href="/terms" className="hover:underline">
-            Terms & Conditions
-          </Link>
-          <span className="hidden sm:inline">•</span>
-          <Link href="/support" className="hover:underline">
-            Support
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }

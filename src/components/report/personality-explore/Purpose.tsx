@@ -69,7 +69,7 @@ const Purpose = () => {
         {applications.map((app) => (
           <div
             key={app.id}
-            className="w-full sm:w-[45%] md:w-[30%] lg:w-[30%] p-4 bg-gray-300/30 shadow-md rounded-md border border-gray-200"
+            className="w-full sm:w-[45%]  lg:w-[30%] p-4 bg-gray-300/30 shadow-md rounded-md border border-gray-200"
           >
             <h4 className="text-lg font-semibold text-gray-800">{app.title}</h4>
             <p className="text-sm text-gray-600 ml-2">{app.description}</p>

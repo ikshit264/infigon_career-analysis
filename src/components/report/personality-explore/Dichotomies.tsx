@@ -30,33 +30,37 @@ const dichotomies = [
 
 export default function FourDichotomies() {
   return (
-    <div className="flex flex-col p-2 ">
-      <h3 className=" text-lg font-bold text-blue-700">THE FOUR DICHOTOMIES</h3>
+    <div className="flex flex-col p-2 w-full">
+      <h3 className="text-lg font-bold text-blue-700">THE FOUR DICHOTOMIES</h3>
+
       <div className="flex items-center justify-center w-full">
-        <div className="space-y-4  w-[80%]">
+        <div className="w-[90%] space-y-6 sm:w-full">
           {dichotomies.map((item, index) => (
             <div
               key={index}
-              className="flex items-center justify-between p-4 rounded-lg"
+              className="flex flex-col sm:flex-row items-center justify-between p-4 rounded gap-2 md:space-y-0 self-stretch"
             >
-              <div className="w-1/3 p-2 border border-gray-200 rounded-lg ">
+              {/* Left Side */}
+              <div className="w-40 md:w-1/3 flex flex-col items-center justify-center p-4 border border-gray-200 rounded text-center flex-1 min-h-full">
                 <span className="block font-medium text-pink-700">
                   {item.left}
                 </span>
-                <p className="text-sm text-gray-600 ml-2 ">{item.leftDesc}</p>
+                <p className="text-sm text-gray-600">{item.leftDesc}</p>
               </div>
-              <div className="flex items-center w-1/3 px-10">
-                <span className="h-5 w-6 bg-green-500 rounded-full"></span>
+
+              {/* Gradient Bar (Hidden in Mobile) */}
+              <div className="hidden md:flex items-center w-1/3 px-10">
+                <span className="h-5 w-5 bg-green-500 rounded-full aspect-square"></span>
                 <div className="h-1 w-full bg-gradient-to-r from-green-500 to-red-500"></div>
-                <span className="h-5 w-6 bg-red-500 rounded-full"></span>
+                <span className="h-5 w-5 bg-red-500 rounded-full aspect-square"></span>
               </div>
-              <div className="w-1/3 p-2 text-right border border-gray-200 rounded-lg flex flex-col items-start ">
+
+              {/* Right Side */}
+              <div className="w-40 md:w-1/3 flex flex-col items-center justify-center p-4 border border-gray-200 rounded text-center flex-1 min-h-full">
                 <span className="block font-medium text-blue-700">
                   {item.right}
                 </span>
-                <p className="text-sm text-gray-600 text-left ml-2">
-                  {item.rightDesc}
-                </p>
+                <p className="text-sm text-gray-600">{item.rightDesc}</p>
               </div>
             </div>
           ))}
