@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import type React from "react";
 import { testSidebarItems } from "@/lib/data";
@@ -12,22 +12,22 @@ export default function ReportLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname(); // Extracts current route path
 
-    const pathname = usePathname(); // Extracts current route path
-  
-    useEffect(() => {
-      if (pathname == "/report") {
-        redirect("/report/personality-explore/results");
-      }
-    }, [pathname]);
+  useEffect(() => {
+    if (pathname === "/report") {
+      redirect("/report/personality-explore/results");
+    }
+  }, [pathname]);
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full max-w-screen overflow-hidden">
       <TopBar />
-      <div className="flex">
-        <TestSidebar tests={testSidebarItems} />
+      <div className="flex w-full max-w-screen">
 
-        <div className="flex-1 ">{children}</div>
+        <TestSidebar tests={testSidebarItems}  />
+
+        <div className="flex-1 min-w-0">{children}</div>
       </div>
     </div>
   );
