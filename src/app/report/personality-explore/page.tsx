@@ -1,9 +1,18 @@
-import React from 'react'
+"use client";
 
-const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+import { redirect, usePathname } from 'next/navigation';
+import React, { useEffect } from 'react';
 
-export default page
+const Page = () => {
+  const pathname = usePathname(); // Extracts current route path
+
+  useEffect(() => {
+    if (pathname === "/report/intrest-explore") {
+      redirect("/report/intrest-explore/results");
+    }
+  }, [pathname]);
+
+  return <div>page</div>;
+};
+
+export default Page;

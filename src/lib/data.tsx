@@ -808,3 +808,344 @@ export const RecomendationData = [
 ]
 
 export const ConclussionData = 'You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real-world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths.'
+
+export const originalChartData = {
+  "A": 60,
+  "B": 60,
+  "C": 60,
+  "D": 60,
+  "E": 60,
+  "F": 60,
+};
+
+// Convert to array format required by DonutChart component
+export const convertedChartData = Object.entries(originalChartData).map(([name, value]) => ({
+  name,
+  value
+}));
+
+export const PersonalityExploreUnderstanding = [
+  {
+    id: "self-assessment",
+    title: "Self Assessment",
+    description:
+      "Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "leadership-development",
+    title: "Leadership Development",
+    description:
+      "Develop leadership skills with practical insights and strategies.",
+  },
+  {
+    id: "career-alignment",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.",
+  },
+  {
+    id: "career-planning",
+    title: "Career Planning",
+    description:
+      "Strategically plan your career growth based on MBTI insights.",
+  },
+  {
+    id: "team-building",
+    title: "Team Building",
+    description:
+      "Improve collaboration and teamwork through personality insights.",
+  },
+  {
+    id: "conflict-resolution",
+    title: "Conflict Resolution",
+    description:
+      "Enhance conflict resolution skills using personality-based strategies.",
+  },
+  {
+    id: "improved-communication",
+    title: "Improved Communication",
+    description:
+      "Understand different communication styles for better interactions.",
+  },
+  {
+    id: "strength-identification",
+    title: "Strength Identification",
+    description:
+      "Recognize and utilize your strengths effectively in professional settings.",
+  },
+  {
+    id: "personal-growth",
+    title: "Personal Growth",
+    description:
+      "Use MBTI insights for continuous self-improvement and development.",
+  },
+];
+
+export const IntrestExplorerTabs = [
+  { id: "Personality", label: "Personality" },
+  { id: "Prefrences", label: "Prefrences" },
+  { id: "SkillsAndStrength", label: "Skills And Strength" },
+  { id: "PreforedWorkEnviornment", label: "Prefored Work Enviornment" },
+  { id: "InteractionStyle", label: "Interaction Style" },
+  { id: "Conclusion", label: "Conclusion" },
+]
+
+export const IntrestExploreRIASECModel_1 = [
+  {
+    id: "self-assessment",
+    title: "Self Assessment",
+    description:
+      "Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "leadership-development",
+    title: "Leadership Development",
+    description:
+      "Develop leadership skills with practical insights and strategies.",
+  },
+  {
+    id: "career-alignment",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.",
+  }
+];
+
+export const IntrestExploreRIASECModel_2 = [
+  {
+    id: "leadership-development",
+    title: "Leadership Development",
+    description:
+      "Develop leadership skills with practical insights and strategies.",
+  },
+  {
+    id: "career-alignment",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.",
+  },
+  {
+    id: "career-planning",
+    title: "Career Planning",
+    description:
+      "Strategically plan your career growth based on MBTI insights.",
+  },
+  {
+    id: "team-building",
+    title: "Team Building",
+    description:
+      "Improve collaboration and teamwork through personality insights.",
+  },
+  {
+    id: "conflict-resolution",
+    title: "Conflict Resolution",
+    description:
+      "Enhance conflict resolution skills using personality-based strategies.",
+  },
+]
+
+export const IntrestExplorerRealisticTraits = [
+  "Practical and Hands-On",
+  "Problem-solvers who prefer tangible results",
+  "Enjoying work with tools and machinery",
+  "Value efficiency and effectiveness in tasks",
+]
+
+export const IntrestExplorePrefrences = [
+  "Prefer tasks that involve physical work and create outcomes.",
+  "Prefer tasks that involve physical work and create outcomes.",
+  "Prefer tasks that involve physical work and create outcomes.", 
+  "Prefer tasks that involve physical work and create outcomes." 
+]
+
+export const IntrestExploreSkillsAndStrength = [
+  "Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency.", 
+  "Manual dexterity and technical profiency." 
+]
+
+export const IntrestExplorePreforedWorkEnviornment = [
+  "Construction sites, manufacturing plants or workshops.",
+  "Construction sites, manufacturing plants or workshops.",
+  "Construction sites, manufacturing plants or workshops.", 
+  "Construction sites, manufacturing plants or workshops." 
+]
+
+export const IntrestExploreeInteractionStyle = [
+  "Direct and straight forward communication",
+  "Direct and straight forward communication",
+  "Direct and straight forward communication",
+  "Direct and straight forward communication",
+]
+
+export const CareerMotivatorsTOP10 = [
+  { "id": 1, "name": "Achievement and Results", "color": "#19A7CE" },
+  { "id": 2, "name": "Helping Others", "color": "#A76D19" },
+  { "id": 3, "name": "Financial Rewards", "color": "#3CCF91" },
+  { "id": 4, "name": "Creativity and Innovation", "color": "#FFD700" },
+  { "id": 5, "name": "Security and Stability", "color": "#7D35E3" },
+  { "id": 6, "name": "Leadership and Influence", "color": "#2892F9" },
+  { "id": 7, "name": "Continuous Learning", "color": "#0D2E63" },
+  { "id": 8, "name": "Independence", "color": "#E974D2" },
+  { "id": 9, "name": "Teamwork and Collaboration", "color": "#9B6C61" },
+  { "id": 10, "name": "Flexibility and Work-Life Balance", "color": "#E78C3C" }
+]
+
+export const CareerMotivatorsYourScore = [
+  {
+    "id": 1,
+    "title": "Achievement and Results",
+    "score": 28,
+    "pros": [
+      "Highly driven to meet and exceed goals.",
+      "Enjoys measurable success and recognition."
+    ],
+    "cons": [
+      "May experience stress from high expectations.",
+      "Can be overly competitive at times."
+    ],
+    "color": "blue-100",
+    "scoreColor": "blue-500"
+  },
+  {
+    "id": 2,
+    "title": "Helping Others",
+    "score": 22,
+    "pros": [
+      "Finds fulfillment in making a difference.",
+      "Strong sense of empathy and compassion."
+    ],
+    "cons": [
+      "Can become emotionally invested in others' issues.",
+      "Might struggle to set personal boundaries."
+    ],
+    "color": "green-100",
+    "scoreColor": "green-500"
+  },
+  {
+    "id": 3,
+    "title": "Financial Rewards",
+    "score": 30,
+    "pros": [
+      "Highly motivated by financial incentives.",
+      "Values financial security and wealth accumulation."
+    ],
+    "cons": [
+      "May prioritize money over work satisfaction.",
+      "Risk of burnout due to financial pressure."
+    ],
+    "color": "yellow-100",
+    "scoreColor": "yellow-500"
+  },
+  {
+    "id": 4,
+    "title": "Security and Stability",
+    "score": 25,
+    "pros": [
+      "Prefers structured and predictable environments.",
+      "Thrives in long-term, stable roles."
+    ],
+    "cons": [
+      "Can be resistant to change or new challenges.",
+      "May avoid risks that could lead to growth."
+    ],
+    "color": "gray-100",
+    "scoreColor": "gray-500"
+  },
+  {
+    "id": 5,
+    "title": "Continuous Learning",
+    "score": 27,
+    "pros": [
+      "Enjoys acquiring new knowledge and skills.",
+      "Thrives in dynamic and evolving environments."
+    ],
+    "cons": [
+      "Might struggle with routine or repetitive work.",
+      "Can become impatient with slow learners."
+    ],
+    "color": "purple-100",
+    "scoreColor": "purple-500"
+  },
+  {
+    "id": 6,
+    "title": "Independence",
+    "score": 21,
+    "pros": [
+      "Prefers autonomy in work and decision-making.",
+      "Self-motivated and takes initiative."
+    ],
+    "cons": [
+      "May struggle in highly collaborative settings.",
+      "Can resist authority or structured environments."
+    ],
+    "color": "orange-100",
+    "scoreColor": "orange-500"
+  },
+  {
+    "id": 7,
+    "title": "Flexibility and Work-Life Balance",
+    "score": 26,
+    "pros": [
+      "Values a job that allows for personal time.",
+      "Works best with adaptable schedules."
+    ],
+    "cons": [
+      "Might find rigid structures challenging.",
+      "Can struggle with time management if too flexible."
+    ],
+    "color": "teal-100",
+    "scoreColor": "teal-500"
+  },
+  {
+    "id": 8,
+    "title": "Creativity and Innovation",
+    "score": 24,
+    "pros": [
+      "Excels in thinking outside the box.",
+      "Enjoys problem-solving and ideation."
+    ],
+    "cons": [
+      "May struggle with strict guidelines and protocols.",
+      "Can find repetitive tasks uninspiring."
+    ],
+    "color": "pink-100",
+    "scoreColor": "pink-500"
+  },
+  {
+    "id": 9,
+    "title": "Leadership and Influence",
+    "score": 23,
+    "pros": [
+      "Naturally takes charge and leads teams.",
+      "Good at motivating and inspiring others."
+    ],
+    "cons": [
+      "May struggle with delegation.",
+      "Can sometimes appear authoritative or controlling."
+    ],
+    "color": "red-100",
+    "scoreColor": "red-500"
+  },
+  {
+    "id": 10,
+    "title": "Variety and Excitement",
+    "score": 29,
+    "pros": [
+      "Thrives in dynamic and ever-changing environments.",
+      "Enjoys taking on new challenges and experiences."
+    ],
+    "cons": [
+      "Can struggle with consistency and routine work.",
+      "Might get bored quickly if not engaged."
+    ],
+    "color": "cyan-100",
+    "scoreColor": "cyan-500"
+  }
+];
+
+export const CareerMotivatorsTabs = [
+  { id: "YourScore", label: "Your Score" },
+  { id: "Conclusion", label: "Conclusion" },
+]

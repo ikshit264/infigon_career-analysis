@@ -7,9 +7,9 @@ const StrengthWeakness = () => {
   const weaknesses = StrengthWeaknessData;
 
   return (
-    <div className="flex flex-row gap-6">
+    <div className="flex flex-col sm:flex-row gap-6">
       {/* Strengths Section */}
-      <div className="w-1/2 p-4">
+      <div className="sm:w-1/2 p-4">
         <h1 className="text-lg font-bold text-green-700 mb-4">Strengths</h1>
         <ul className="space-y-2">
           {strengths.map((item) => (
@@ -21,7 +21,7 @@ const StrengthWeakness = () => {
       </div>
 
       {/* Weaknesses Section */}
-      <div className="w-1/2 p-4">
+      <div className="sm:w-1/2 p-4">
         <h1 className="text-lg font-bold text-red-700 mb-4">Weaknesses</h1>
         <ul className="space-y-2">
           {weaknesses.map((item) => (

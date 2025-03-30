@@ -11,7 +11,7 @@ const Personality = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        className="flex gap-6 px-2 items-start"
+        className="flex sm:flex-row flex-col items-center gap-6 px-2 sm:items-start"
       >
         {/* Image Container */}
         <div className="flex flex-col  items-center rounded-lg bg-purple-50 p-6 shrink-0">

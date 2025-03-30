@@ -1,5 +1,6 @@
 import FourDichotomies from "@/components/report/personality-explore/Dichotomies";
 import Purpose from "@/components/report/personality-explore/Purpose";
+import { PersonalityExploreUnderstanding } from "@/lib/data";
 
 export default function UnderstandingPersonalityPage() {
   return (
@@ -11,7 +12,7 @@ export default function UnderstandingPersonalityPage() {
         {/* Introduction Section */}
         <div className="flex flex-col gap-4">
           <h3 className="text-xl font-extrabold">Introduction</h3>
-          <p className="text-sm sm:text-md leading-relaxed text-gray-700">
+          <p className="text-md sm:text-lg leading-relaxed text-gray-700">
             Congratulations on taking the first step for personalized Career Planning & Assessment! We understand the
             significance of making informed decisions as you navigate your academic journey and future career. We are
             committed to empowering individuals with the tools and insights needed to confidently navigate the world
@@ -21,7 +22,7 @@ export default function UnderstandingPersonalityPage() {
 
         {/* MBTI Explanation */}
         <div className="flex flex-col gap-4 mt-4">
-          <h3 className="text-md font-medium text-gray-800">
+          <h3 className="text-lg font-medium text-gray-800">
             We understand your personality through the <strong>Myers-Briggs Type Indicator (MBTI)</strong>, a personality
             explorer that helps identify your preferences, strengths, and areas for growth. Developed by Isabel Briggs
             Myers and Katharine Cook Briggs, the MBTI categorizes personality based on four dichotomies. The goal is to
@@ -35,7 +36,7 @@ export default function UnderstandingPersonalityPage() {
         </div>
 
         <div className="">
-          <Purpose />
+          <Purpose title="Purpose, Applications, and Benefits of MBTI in Career Development" applications={PersonalityExploreUnderstanding}/>
         </div>
       </div>
     </div>
