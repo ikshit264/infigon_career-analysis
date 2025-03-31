@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 
 interface Card {
@@ -28,18 +29,22 @@ const FlipCard = ({ card }: { card: Card }) => {
       >
         {/* Front of card */}
         <div className="absolute w-full h-full bg-white rounded-lg shadow-sm flex items-center justify-center p-4 backface-hidden">
-          <img
+          <Image
             src={card.image}
             alt={card.title}
+            width={100}
+            height={100}
             className="max-h-full max-w-full object-contain"
           />
         </div>
 
         {/* Back of card */}
         <div className="absolute w-full h-full bg-white rounded-lg shadow-md flex flex-col items-center justify-center p-6 rotate-y-180 backface-hidden">
-          <img
+          <Image
             src={card.image}
             alt={card.title}
+            width={40}
+            height={40}
             className="h-16 w-16 mb-4 object-contain"
           />
           <h3 className="text-xl font-bold mb-2 text-center">{card.title}</h3>

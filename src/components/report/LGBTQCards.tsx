@@ -8,7 +8,7 @@ export type Motivator = {
   scoreColor: string;
   pros?: string[];
   cons?: string[];
-  description: string;
+  description?: string;
   strength?: string[];
 };
 

@@ -8,11 +8,11 @@ export type PurposrProp = {
 export type AllApplication = PurposrProp[];
 
 const getRowStructure = (count: number) => {
-  let rows: number[] = [];
+  const rows: number[] = [];
   let remaining = count;
 
   while (remaining > 0) {
-    let perRow = (remaining != 3) ? Math.ceil(Math.max(Math.sqrt(remaining))) : 3; // Dynamically decide row sizes
+    const perRow = (remaining != 3) ? Math.ceil(Math.max(Math.sqrt(remaining))) : 3; // Dynamically decide row sizes
     rows.push(perRow);
     remaining -= perRow;
   }
@@ -31,7 +31,7 @@ const Purpose = ({
 }) => {
   const rowStructure = getRowStructure(applications.length);
 
-  let index = 0;
+  const index = 0;
 
   return (
     <div className="flex flex-col items-start gap-6 p-2 w-full">

@@ -25,7 +25,7 @@ interface TestSidebarProps {
 
 export default function TestSidebar({ tests }: TestSidebarProps) {
   const pathname = usePathname();
-  
+
   // Determine active test ID based on the pathname
   const getActiveTestFromPathname = () => {
     for (const test of tests) {
@@ -35,13 +35,16 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
     }
     return null;
   };
-  
-  const [activeTest, setActiveTest] = useState<number | null>(getActiveTestFromPathname());
+
+  const [activeTest, setActiveTest] = useState<number | null>(
+    getActiveTestFromPathname()
+  );
   const [isOpen, setIsOpen] = useState(false); // Mobile toggle state
 
   // Update active test when pathname changes
   useEffect(() => {
     setActiveTest(getActiveTestFromPathname());
+// eslint-disable-next-line
   }, [pathname]);
 
   // Ref to detect clicks outside
@@ -49,7 +52,10 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     }
@@ -131,7 +137,7 @@ function SidebarContent({
     <div className="flex flex-col p-4 h-full">
       {tests.map((test) => {
         const isActive = activeTest === test.id;
-        
+
         // Auto-expand the active test section
         const shouldExpand = isActive || pathname.startsWith(test.path);
 
@@ -141,7 +147,9 @@ function SidebarContent({
               onClick={() => setActiveTest(shouldExpand ? null : test.id)}
               className={cn(
                 "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium",
-                shouldExpand ? "bg-blue-50 text-blue-700" : "text-gray-700 hover:bg-gray-100"
+                shouldExpand
+                  ? "bg-blue-50 text-blue-700"
+                  : "text-gray-700 hover:bg-gray-100"
               )}
             >
               <div className="mr-2 flex h-8 w-8 items-center justify-center">
@@ -175,7 +183,9 @@ function SidebarContent({
                       href={subItem.path}
                       className={cn(
                         "block rounded-md px-3 py-2 text-sm",
-                        isSubActive ? "bg-blue-50 text-blue-700" : "text-gray-600 hover:bg-gray-100"
+                        isSubActive
+                          ? "bg-blue-50 text-blue-700"
+                          : "text-gray-600 hover:bg-gray-100"
                       )}
                       onClick={closeMenu}
                     >

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { EmotionalIntelligenceTabs, personalityTabs } from "@/lib/data";
+import { EmotionalIntelligenceTabs } from "@/lib/data";
 import TabNavigation from "@/components/shared/tab-navigation";
 import { reportSections } from "@/components/report/emotional-intelligence/ReportSections";
 

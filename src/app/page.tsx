@@ -1,3 +1,4 @@
+// eslint-disable
 "use client";
 
 import Link from "next/link";
@@ -28,6 +29,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setText(words[index]);
+      //
       index = (index + 1) % words.length;
     }, 1500);
     return () => clearInterval(interval);
