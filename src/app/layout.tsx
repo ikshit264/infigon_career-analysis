@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={` antialiased `}
       >
         <Navbar />
         <div className="flex min-h-[calc(100vh-64px)]">{children}</div>

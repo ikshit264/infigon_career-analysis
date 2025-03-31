@@ -59,7 +59,7 @@ export default function Navbar() {
                   href={item.path}
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-blue-700",
-                    pathname === item.path ? "text-blue-700" : "text-gray-600",
+                    pathname.includes(item.path) ? "text-blue-700" : "text-gray-600",
                   )}
                 >
                   {item.name}

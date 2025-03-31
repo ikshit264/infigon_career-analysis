@@ -1,6 +1,6 @@
 export default function UnderstandingIntrestExplorerPage() {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center p-2">
       <div className="flex flex-col gap-4 w-full sm:p-6">
         {/* Title */}
         <h2 className="text-2xl font-bold text-blue-700 mb-4">Understanding Career Motivators</h2>

@@ -1,13 +1,13 @@
 import React from "react";
-import LGBTQCards from "../LGBTQCards";
-import { CareerMotivatorsYourScore } from "@/lib/data";
+import Conclusion from "../Conclusion";
+import LGBTQConclusion from "./LGBTQConclusion";
 
-const YourScore = () => {
+const Conclusions = () => {
   return (
     <div className="flex flex-col w-full items-center">
       <div className="flex gap-4 self-start p-4 items-center">
-        <h2 className="text-2xl font-bold">
-          Your <span className="text-blue-600"> Score </span>{" "}
+        <h2 className="text-xl text-blue-500 font-bold">
+          Summarised Result
         </h2>
         <div className="flex gap-4 items-center">
           <div className="flex gap-4 items-center">
@@ -24,9 +24,11 @@ const YourScore = () => {
           </div>
         </div>
       </div>
-      <LGBTQCards array={CareerMotivatorsYourScore} outof={30}/>
+      <LGBTQConclusion/>
+     <Conclusion color="#FA9B56" content={"You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths."}/>
+
     </div>
   );
 };
 
-export default YourScore;
+export default Conclusions;

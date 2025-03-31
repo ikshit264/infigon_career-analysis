@@ -1,6 +1,6 @@
 import React from "react";
 import LGBTQCards from "../LGBTQCards";
-import { CareerMotivatorsYourScore } from "@/lib/data";
+import { EmotionalIntelligenceYourScore } from "@/lib/data";
 
 const YourScore = () => {
   return (
@@ -12,19 +12,15 @@ const YourScore = () => {
         <div className="flex gap-4 items-center">
           <div className="flex gap-4 items-center">
             <span className="w-6 aspect-square rounded-full bg-red-500" />
-            <span className="text-gray-500">Low Relevance</span>
-          </div>
-          <div className="flex gap-4 items-center">
-            <span className="w-6 aspect-square rounded-full bg-yellow-500" />
-            <span className="text-gray-500">Low Relevance</span>
+            <span className="text-gray-500">Strength</span>
           </div>
           <div className="flex gap-4 items-center">
             <span className="w-6 aspect-square rounded-full bg-green-500" />
-            <span className="text-gray-500">Low Relevance</span>
+            <span className="text-gray-500">Needs Attentation</span>
           </div>
         </div>
       </div>
-      <LGBTQCards array={CareerMotivatorsYourScore} outof={30}/>
+      <LGBTQCards array={EmotionalIntelligenceYourScore} outof={50}/>
     </div>
   );
 };

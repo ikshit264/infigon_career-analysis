@@ -3,7 +3,7 @@ import React from 'react'
 
 const layout = ({children}:Layoutprops) => {
   return (
-    <div>
+    <div className='w-full'>
         {children}
     </div>
   )

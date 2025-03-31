@@ -9,7 +9,7 @@ const Conclusion = ({ color, content }: { color: string; content: string }) => {
       </h1>
 
       {/* Content with Background Color & White Text */}
-      <div style={{ backgroundColor: color }} className="p-2 text-white rounded-lg">
+      <div style={{ backgroundColor: color }} className="p-2 ml-1 text-white rounded-lg">
         {content}
       </div>
     </div>

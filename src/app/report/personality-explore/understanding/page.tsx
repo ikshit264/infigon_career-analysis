@@ -4,8 +4,8 @@ import { PersonalityExploreUnderstanding } from "@/lib/data";
 
 export default function UnderstandingPersonalityPage() {
   return (
-    <div className="flex justify-center ">
-      <div className="flex flex-col gap-4 w-full max-w-screen-lg p-4 sm:p-6">
+    <div className="flex justify-center p-2">
+      <div className="flex flex-col gap-4 w-full p-6">
         {/* Title */}
         <h2 className="text-2xl font-bold text-blue-700 mb-4">Understanding Personality Explorer</h2>
 

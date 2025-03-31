@@ -1,4 +1,4 @@
-import { ThumbsUp } from 'lucide-react';
+import { ThumbsUp } from "lucide-react";
 
 export const sidebarItems = [
   {
@@ -131,7 +131,7 @@ export const sidebarItems = [
       },
     ],
   },
-]
+];
 
 export const testSidebarItems = [
   {
@@ -235,7 +235,7 @@ export const testSidebarItems = [
       {
         id: "style-types",
         title: "Learning Style Types",
-        path: "/report/learning-style/types",
+        path: "/report/learning-style/understanding",
       },
       {
         id: "learning-result",
@@ -244,7 +244,7 @@ export const testSidebarItems = [
       },
     ],
   },
-]
+];
 
 export const personalityTabs = [
   { id: "Personality", label: "Personality" },
@@ -259,20 +259,20 @@ export const personalityTabs = [
   // { id: "FamousPersonalities", label: "FamousPersonalities" },
   // { id: "Recomendation", label: "Recomendation" },
   { id: "Conclusion", label: "Conclusion" },
-]
+];
 
 export const careerOptions = [
   { id: 1, title: "Engineer" },
   { id: 2, title: "Doctor" },
   { id: 3, title: "Teacher" },
-]
+];
 
 export const personalityTraits = [
   { id: "intj", label: "INTJ Personality" },
   { id: "strategic", label: "STRATEGIC" },
   { id: "analytical", label: "ANALYTICAL" },
   { id: "independent", label: "INDEPENDENT" },
-]
+];
 
 export const userReport = {
   title: "Your Career Analysis Report",
@@ -289,7 +289,7 @@ export const userReport = {
     description:
       "Congratulations on taking the first step for personalized Career Planning & Assessment! We understand the significance of making informed decisions as you navigate your academic journey and future career. We are committed to empowering individuals with the tools and insights needed to confidently navigate the world of careers and education.",
   },
-}
+};
 
 export const counsellors = [
   {
@@ -328,13 +328,14 @@ export const counsellors = [
     location: "San Francisco, CA",
     distance: "Online only",
   },
-]
+];
 
 export const testsList = [
   {
     id: 1,
     title: "Personality Assessment",
-    description: "Discover your personality type and how it influences your career choices",
+    description:
+      "Discover your personality type and how it influences your career choices",
     duration: "15 minutes",
     questions: 45,
     completed: true,
@@ -361,7 +362,8 @@ export const testsList = [
   {
     id: 4,
     title: "Emotional Intelligence",
-    description: "Assess your emotional intelligence and its impact on your career",
+    description:
+      "Assess your emotional intelligence and its impact on your career",
     duration: "15 minutes",
     questions: 40,
     completed: true,
@@ -385,7 +387,7 @@ export const testsList = [
     completed: false,
     image: "/placeholder.svg?height=80&width=80",
   },
-]
+];
 
 export const sessionsList = [
   {
@@ -396,7 +398,8 @@ export const sessionsList = [
     time: "2:00 PM - 3:00 PM",
     topic: "Career Path Planning",
     status: "completed",
-    notes: "Discussed potential career paths in engineering and next steps for education",
+    notes:
+      "Discussed potential career paths in engineering and next steps for education",
   },
   {
     id: 2,
@@ -406,7 +409,7 @@ export const sessionsList = [
     time: "10:00 AM - 11:00 AM",
     topic: "Education Planning",
     status: "upcoming",
-    notes: "",
+    notes: "Discussed potential career paths in engineering and next steps for education",
   },
   {
     id: 3,
@@ -416,15 +419,17 @@ export const sessionsList = [
     time: "1:00 PM - 2:00 PM",
     topic: "Resume Review",
     status: "completed",
-    notes: "Reviewed resume and suggested improvements for engineering positions",
+    notes:
+      "Reviewed resume and suggested improvements for engineering positions",
   },
-]
+];
 
 export const careerLibraryItems = [
   {
     id: 1,
     title: "Software Engineer",
-    description: "Design, develop, and maintain software systems and applications",
+    description:
+      "Design, develop, and maintain software systems and applications",
     salary: "$70,000 - $150,000",
     education: "Bachelor's degree in Computer Science or related field",
     outlook: "Excellent",
@@ -434,9 +439,11 @@ export const careerLibraryItems = [
   {
     id: 2,
     title: "Data Scientist",
-    description: "Analyze and interpret complex data to help organizations make better decisions",
+    description:
+      "Analyze and interpret complex data to help organizations make better decisions",
     salary: "$80,000 - $160,000",
-    education: "Master's or PhD in Statistics, Computer Science, or related field",
+    education:
+      "Master's or PhD in Statistics, Computer Science, or related field",
     outlook: "Excellent",
     category: "Technology",
     image: "/placeholder.svg?height=120&width=120",
@@ -448,13 +455,14 @@ export const careerLibraryItems = [
     salary: "$150,000 - $300,000",
     education: "Medical degree (MD or DO) and residency",
     outlook: "Good",
-    category: "Healthcare",
+    category: "Technology",
     image: "/placeholder.svg?height=120&width=120",
   },
   {
     id: 4,
     title: "High School Teacher",
-    description: "Educate students in specific subject areas and prepare them for future education",
+    description:
+      "Educate students in specific subject areas and prepare them for future education",
     salary: "$45,000 - $85,000",
     education: "Bachelor's degree and teaching certification",
     outlook: "Stable",
@@ -464,7 +472,8 @@ export const careerLibraryItems = [
   {
     id: 5,
     title: "Mechanical Engineer",
-    description: "Design, develop, build, and test mechanical devices and systems",
+    description:
+      "Design, develop, build, and test mechanical devices and systems",
     salary: "$65,000 - $120,000",
     education: "Bachelor's degree in Mechanical Engineering",
     outlook: "Good",
@@ -474,14 +483,15 @@ export const careerLibraryItems = [
   {
     id: 6,
     title: "UX Designer",
-    description: "Create meaningful and relevant experiences for users of products and services",
+    description:
+      "Create meaningful and relevant experiences for users of products and services",
     salary: "$60,000 - $130,000",
     education: "Bachelor's degree in Design, HCI, or related field",
     outlook: "Excellent",
     category: "Design",
     image: "/placeholder.svg?height=120&width=120",
   },
-]
+];
 
 export const personalityTypes = [
   {
@@ -616,213 +626,271 @@ export const personalityTypes = [
 
 export const personality_characteristics = [
   {
-    "id": 1,
-    "title": "Strategic and Analytical",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 1,
+    title: "Strategic and Analytical",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 2,
-    "title": "Independent and Visionary",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 2,
+    title: "Independent and Visionary",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 3,
-    "title": "Logical and Rational",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 3,
+    title: "Logical and Rational",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 4,
-    "title": "Goal Oriented and Determined",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 4,
+    title: "Goal Oriented and Determined",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 5,
-    "title": "Confident and Assertive",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    id: 5,
+    title: "Confident and Assertive",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
 export const StrengthWeaknessData = [
   {
-    "id": 1,
-    "title": "Strategic Thinking",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 1,
+    title: "Strategic Thinking",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 2,
-    "title": "Problem Solving",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 2,
+    title: "Problem Solving",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 3,
-    "title": "Independence",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 3,
+    title: "Independence",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 4,
-    "title": "Visionary Leadership",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 4,
+    title: "Visionary Leadership",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 5,
-    "title": "Efficiency",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    id: 5,
+    title: "Efficiency",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
 export const WorkStyleData = [
   {
-    "id": 1,
-    "title": "Strategic",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 1,
+    title: "Strategic",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 2,
-    "title": "Analytical",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 2,
+    title: "Analytical",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 3,
-    "title": "Independent",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 3,
+    title: "Independent",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 4,
-    "title": "Results Driven",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 4,
+    title: "Results Driven",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
-]
+];
 
 export const PreferencesData = [
-  { title: "Intellectual Stimulation", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
-  { title: "TEST 2", content: "Interest Explorer" , icon: <ThumbsUp/> },
-  { title: "Autonomy", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
-  { title: "Innovation", content: "TEST 3", icon: <ThumbsUp/> },
-  { title: "Career Motivators", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> },
-  { title: "Efficiency", content: "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.", icon: <ThumbsUp/> }
+  {
+    title: "Intellectual Stimulation",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    icon: <ThumbsUp />,
+  },
+  { title: "TEST 2", content: "Interest Explorer", icon: <ThumbsUp /> },
+  {
+    title: "Autonomy",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    icon: <ThumbsUp />,
+  },
+  { title: "Innovation", content: "TEST 3", icon: <ThumbsUp /> },
+  {
+    title: "Career Motivators",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    icon: <ThumbsUp />,
+  },
+  {
+    title: "Efficiency",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    icon: <ThumbsUp />,
+  },
 ];
 
 export const InterPersonalInteraction = [
   {
-    "title": "Direct",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Direct",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Assertive",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Assertive",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Reserved",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Reserved",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Objective",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Objective",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Visionary",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    title: "Visionary",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
 export const WorkCultureData = [
   {
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
 export const RoleData = [
   {
-    "id": 1,
-    "title": "Strategic Planning and Management",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 1,
+    title: "Strategic Planning and Management",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 2,
-    "title": "Research and Analysis",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 2,
+    title: "Research and Analysis",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 3,
-    "title": "Innovation and Technology",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    id: 3,
+    title: "Innovation and Technology",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "id": 4,
-    "title": "Leadership and Entrepreneurship",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    id: 4,
+    title: "Leadership and Entrepreneurship",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
 export const CaseStudiesData = [
   {
-    "title": "Entrepreneurship",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Entrepreneurship",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Strategic Planing",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Strategic Planing",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
-]
+];
 
 export const FamousPersonalitiesData = [
   {
-    "title": "Famous Personalities",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Famous Personalities",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Fitcional Characters",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Fitcional Characters",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
-]
+];
 
 export const RecomendationData = [
   {
-    "title": "Flexibility",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Flexibility",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Emotional Intelligence",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Emotional Intelligence",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Collabaration",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
+    title: "Collabaration",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
   },
   {
-    "title": "Patience",
-    "content": "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles."
-  }
-]
+    title: "Patience",
+    content:
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  },
+];
 
-export const ConclussionData = 'You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real-world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths.'
+export const ConclussionData =
+  "You thrive in structured, people-oriented roles where your strengths in organization, empathy, and teamwork can shine. By embracing personal growth strategies, you can mitigate weaknesses and enhance your career success, as demonstrated by real-world examples and case studies. Understanding and developing your MBTI type can lead to fulfilling and impactful career paths.";
 
 export const originalChartData = {
-  "A": 60,
-  "B": 60,
-  "C": 60,
-  "D": 60,
-  "E": 60,
-  "F": 60,
+  A: 60,
+  B: 60,
+  C: 60,
+  D: 60,
+  E: 60,
+  F: 60,
 };
 
-// Convert to array format required by DonutChart component
-export const convertedChartData = Object.entries(originalChartData).map(([name, value]) => ({
-  name,
-  value
-}));
+export const convertedChartData = Object.entries(originalChartData).map(
+  ([name, value]) => ({
+    name,
+    value,
+  })
+);
 
 export const PersonalityExploreUnderstanding = [
   {
@@ -888,7 +956,7 @@ export const IntrestExplorerTabs = [
   { id: "PreforedWorkEnviornment", label: "Prefored Work Enviornment" },
   { id: "InteractionStyle", label: "Interaction Style" },
   { id: "Conclusion", label: "Conclusion" },
-]
+];
 
 export const IntrestExploreRIASECModel_1 = [
   {
@@ -908,7 +976,7 @@ export const IntrestExploreRIASECModel_1 = [
     title: "Career Alignment",
     description:
       "Discover career paths that align with your strengths and interests.",
-  }
+  },
 ];
 
 export const IntrestExploreRIASECModel_2 = [
@@ -942,210 +1010,412 @@ export const IntrestExploreRIASECModel_2 = [
     description:
       "Enhance conflict resolution skills using personality-based strategies.",
   },
-]
+];
 
 export const IntrestExplorerRealisticTraits = [
   "Practical and Hands-On",
   "Problem-solvers who prefer tangible results",
   "Enjoying work with tools and machinery",
   "Value efficiency and effectiveness in tasks",
-]
+];
 
 export const IntrestExplorePrefrences = [
   "Prefer tasks that involve physical work and create outcomes.",
   "Prefer tasks that involve physical work and create outcomes.",
-  "Prefer tasks that involve physical work and create outcomes.", 
-  "Prefer tasks that involve physical work and create outcomes." 
-]
+  "Prefer tasks that involve physical work and create outcomes.",
+  "Prefer tasks that involve physical work and create outcomes.",
+];
 
 export const IntrestExploreSkillsAndStrength = [
   "Manual dexterity and technical profiency.",
   "Manual dexterity and technical profiency.",
-  "Manual dexterity and technical profiency.", 
-  "Manual dexterity and technical profiency." 
-]
+  "Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency.",
+];
 
 export const IntrestExplorePreforedWorkEnviornment = [
   "Construction sites, manufacturing plants or workshops.",
   "Construction sites, manufacturing plants or workshops.",
-  "Construction sites, manufacturing plants or workshops.", 
-  "Construction sites, manufacturing plants or workshops." 
-]
+  "Construction sites, manufacturing plants or workshops.",
+  "Construction sites, manufacturing plants or workshops.",
+];
 
 export const IntrestExploreeInteractionStyle = [
   "Direct and straight forward communication",
   "Direct and straight forward communication",
   "Direct and straight forward communication",
   "Direct and straight forward communication",
-]
+];
 
 export const CareerMotivatorsTOP10 = [
-  { "id": 1, "name": "Achievement and Results", "color": "#19A7CE" },
-  { "id": 2, "name": "Helping Others", "color": "#A76D19" },
-  { "id": 3, "name": "Financial Rewards", "color": "#3CCF91" },
-  { "id": 4, "name": "Creativity and Innovation", "color": "#FFD700" },
-  { "id": 5, "name": "Security and Stability", "color": "#7D35E3" },
-  { "id": 6, "name": "Leadership and Influence", "color": "#2892F9" },
-  { "id": 7, "name": "Continuous Learning", "color": "#0D2E63" },
-  { "id": 8, "name": "Independence", "color": "#E974D2" },
-  { "id": 9, "name": "Teamwork and Collaboration", "color": "#9B6C61" },
-  { "id": 10, "name": "Flexibility and Work-Life Balance", "color": "#E78C3C" }
-]
+  { id: 1, name: "Achievement and Results", color: "#19A7CE" },
+  { id: 2, name: "Helping Others", color: "#A76D19" },
+  { id: 3, name: "Financial Rewards", color: "#3CCF91" },
+  { id: 4, name: "Creativity and Innovation", color: "#FFD700" },
+  { id: 5, name: "Security and Stability", color: "#7D35E3" },
+  { id: 6, name: "Leadership and Influence", color: "#2892F9" },
+  { id: 7, name: "Continuous Learning", color: "#0D2E63" },
+  { id: 8, name: "Independence", color: "#E974D2" },
+  { id: 9, name: "Teamwork and Collaboration", color: "#9B6C61" },
+  { id: 10, name: "Flexibility and Work-Life Balance", color: "#E78C3C" },
+];
 
 export const CareerMotivatorsYourScore = [
   {
-    "id": 1,
-    "title": "Achievement and Results",
-    "score": 28,
-    "pros": [
+    id: 1,
+    title: "Achievement and Results",
+    score: 28,
+    pros: [
       "Highly driven to meet and exceed goals.",
-      "Enjoys measurable success and recognition."
+      "Enjoys measurable success and recognition.",
     ],
-    "cons": [
+    cons: [
       "May experience stress from high expectations.",
-      "Can be overly competitive at times."
+      "Can be overly competitive at times.",
     ],
-    "color": "blue-100",
-    "scoreColor": "blue-500"
+    color: "#DBEAFE",
+    scoreColor: "#EF4444",
   },
   {
-    "id": 2,
-    "title": "Helping Others",
-    "score": 22,
-    "pros": [
+    id: 2,
+    title: "Helping Others",
+    score: 22,
+    pros: [
       "Finds fulfillment in making a difference.",
-      "Strong sense of empathy and compassion."
+      "Strong sense of empathy and compassion.",
     ],
-    "cons": [
+    cons: [
       "Can become emotionally invested in others' issues.",
-      "Might struggle to set personal boundaries."
+      "Might struggle to set personal boundaries.",
     ],
-    "color": "green-100",
-    "scoreColor": "green-500"
+    color: "#DCFCE7",
+    scoreColor: "#22C55E",
   },
   {
-    "id": 3,
-    "title": "Financial Rewards",
-    "score": 30,
-    "pros": [
+    id: 3,
+    title: "Financial Rewards",
+    score: 30,
+    pros: [
       "Highly motivated by financial incentives.",
-      "Values financial security and wealth accumulation."
+      "Values financial security and wealth accumulation.",
     ],
-    "cons": [
+    cons: [
       "May prioritize money over work satisfaction.",
-      "Risk of burnout due to financial pressure."
+      "Risk of burnout due to financial pressure.",
     ],
-    "color": "yellow-100",
-    "scoreColor": "yellow-500"
+    color: "#FEF9C3",
+    scoreColor: "#EAB308",
   },
   {
-    "id": 4,
-    "title": "Security and Stability",
-    "score": 25,
-    "pros": [
+    id: 4,
+    title: "Security and Stability",
+    score: 25,
+    pros: [
       "Prefers structured and predictable environments.",
-      "Thrives in long-term, stable roles."
+      "Thrives in long-term, stable roles.",
     ],
-    "cons": [
+    cons: [
       "Can be resistant to change or new challenges.",
-      "May avoid risks that could lead to growth."
+      "May avoid risks that could lead to growth.",
     ],
-    "color": "gray-100",
-    "scoreColor": "gray-500"
+    color: "#F3F4F6",
+    scoreColor: "#22C55E",
   },
   {
-    "id": 5,
-    "title": "Continuous Learning",
-    "score": 27,
-    "pros": [
+    id: 5,
+    title: "Continuous Learning",
+    score: 27,
+    pros: [
       "Enjoys acquiring new knowledge and skills.",
-      "Thrives in dynamic and evolving environments."
+      "Thrives in dynamic and evolving environments.",
     ],
-    "cons": [
+    cons: [
       "Might struggle with routine or repetitive work.",
-      "Can become impatient with slow learners."
+      "Can become impatient with slow learners.",
     ],
-    "color": "purple-100",
-    "scoreColor": "purple-500"
+    color: "#DBEAFE",
+    scoreColor: "#EF4444",
   },
   {
-    "id": 6,
-    "title": "Independence",
-    "score": 21,
-    "pros": [
+    id: 6,
+    title: "Independence",
+    score: 21,
+    pros: [
       "Prefers autonomy in work and decision-making.",
-      "Self-motivated and takes initiative."
+      "Self-motivated and takes initiative.",
     ],
-    "cons": [
+    cons: [
       "May struggle in highly collaborative settings.",
-      "Can resist authority or structured environments."
+      "Can resist authority or structured environments.",
     ],
-    "color": "orange-100",
-    "scoreColor": "orange-500"
+    color: "#CCFBF1",
+    scoreColor: "#EAB308",
   },
   {
-    "id": 7,
-    "title": "Flexibility and Work-Life Balance",
-    "score": 26,
-    "pros": [
+    id: 7,
+    title: "Flexibility and Work-Life Balance",
+    score: 26,
+    pros: [
       "Values a job that allows for personal time.",
-      "Works best with adaptable schedules."
+      "Works best with adaptable schedules.",
     ],
-    "cons": [
+    cons: [
       "Might find rigid structures challenging.",
-      "Can struggle with time management if too flexible."
+      "Can struggle with time management if too flexible.",
     ],
-    "color": "teal-100",
-    "scoreColor": "teal-500"
+    color: "#CCFBF1",
+    scoreColor: "#22C55E",
   },
   {
-    "id": 8,
-    "title": "Creativity and Innovation",
-    "score": 24,
-    "pros": [
+    id: 8,
+    title: "Creativity and Innovation",
+    score: 24,
+    pros: [
       "Excels in thinking outside the box.",
-      "Enjoys problem-solving and ideation."
+      "Enjoys problem-solving and ideation.",
     ],
-    "cons": [
+    cons: [
       "May struggle with strict guidelines and protocols.",
-      "Can find repetitive tasks uninspiring."
+      "Can find repetitive tasks uninspiring.",
     ],
-    "color": "pink-100",
-    "scoreColor": "pink-500"
+    color: "#FCE7F3",
+    scoreColor: "#EF4444",
   },
   {
-    "id": 9,
-    "title": "Leadership and Influence",
-    "score": 23,
-    "pros": [
+    id: 9,
+    title: "Leadership and Influence",
+    score: 23,
+    pros: [
       "Naturally takes charge and leads teams.",
-      "Good at motivating and inspiring others."
+      "Good at motivating and inspiring others.",
     ],
-    "cons": [
+    cons: [
       "May struggle with delegation.",
-      "Can sometimes appear authoritative or controlling."
+      "Can sometimes appear authoritative or controlling.",
     ],
-    "color": "red-100",
-    "scoreColor": "red-500"
+    color: "#FEE2E2",
+    scoreColor: "#EAB308",
   },
   {
-    "id": 10,
-    "title": "Variety and Excitement",
-    "score": 29,
-    "pros": [
+    id: 10,
+    title: "Variety and Excitement",
+    score: 29,
+    pros: [
       "Thrives in dynamic and ever-changing environments.",
-      "Enjoys taking on new challenges and experiences."
+      "Enjoys taking on new challenges and experiences.",
     ],
-    "cons": [
+    cons: [
       "Can struggle with consistency and routine work.",
-      "Might get bored quickly if not engaged."
+      "Might get bored quickly if not engaged.",
     ],
-    "color": "cyan-100",
-    "scoreColor": "cyan-500"
-  }
+    color: "#CFFAFE",
+    scoreColor: "#22C55E",
+  },
 ];
 
 export const CareerMotivatorsTabs = [
   { id: "YourScore", label: "Your Score" },
   { id: "Conclusion", label: "Conclusion" },
-]
+];
+
+export const EmotionalIntelligenceTest = [
+  { id: 1, title: "Self-Awareness", color: "#F97316" }, // orange-500
+  { id: 2, title: "Self-Regulation", color: "#3B82F6" }, // blue-500
+  { id: 3, title: "Empathy", color: "#A855F7" }, // purple-500
+  { id: 4, title: "Social Skills", color: "#A52A2A" }, // brown-500 (Custom, as Tailwind doesn't have it)
+  { id: 5, title: "Motivation", color: "#22C55E" }, // green-500
+];
+
+export const EmotionalIntelligenceTest_Application = [
+  {
+    id: "Enhanced Leadership and Communication Skills",
+    title: "Enhanced Leadership and Communication Skills",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+  {
+    id: "Imporved Decision Making and Problem Solving",
+    title: "Imporved Decision Making and Problem Solving",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+  {
+    id: "Career Planning and Development",
+    title: "Career Planning and Development",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+  {
+    id: "Emotional Intelligence in the Workplace",
+    title: "Emotional Intelligence in the Workplace",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+  {
+    id: "Leadership Development",
+    title: "Leadership Development",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+];
+
+export const EmotionalIntelligenceTest_Benifits = [
+  {
+    id: "Improved Interpersonal Relationships",
+    title: "Improved Interpersonal Relationships",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+  {
+    id: "Enhanced Job Performance",
+    title: "Enhanced Job Performance",
+    description:
+      "Focuses on concrete, tangible information and present realities tangible information and present realities Focuses on concrete, tangible information and present realities tangible information and present realities.",
+  },
+];
+
+export const EmotionalIntelligenceYourScore = [
+  {
+    id: 1,
+    title: "Self Awareness",
+    color: "#F97316",
+    score: 45,
+    scoreColor: "#27AE60",
+    description:
+      "Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
+    strength: [
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Self-Regulation",
+    color: "#3B82F6",
+    score: 45,
+    scoreColor: "#27AE60",
+    description:
+      "Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
+    strength: [
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Empathy",
+    color: "#A855F7",
+    score: 45,
+    scoreColor: "#27AE60",
+    description:
+      "Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
+    strength: [
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Social Skills",
+    color: "#A52A2A",
+    score: 45,
+    scoreColor: "#27AE60",
+    description:
+      "Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
+    strength: [
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    ],
+  },
+  {
+    id: 5,
+    title: "Motivation",
+    color: "#22C55E",
+    score: 45,
+    scoreColor: "#27AE60",
+    description:
+      "Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.Prefer tasks that involve physical work and create outcomes.",
+    strength: [
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    ],
+  },
+];
+
+export const EmotionalIntelligenceTabs = [
+  { id: "YourScore", label: "Your Score" },
+  { id: "Conclusion", label: "Conclusion" },
+];
+
+export const LearningStylesUnderstanding_1 = [
+  {
+    id: "Talored Learning Strategies",
+    title: "Self Assessment",
+    description:
+      "Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "Optimised Traning Program",
+    title: "Leadership Development",
+    description:
+      "Develop leadership skills with practical insights and strategies.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "Improved Communication And Collaboration",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "Enhanced Job Performance",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+];
+
+export const LearningStylesUnderstanding_2 = [
+  {
+    id: "Talored Learning Strategies",
+    title: "Self Assessment",
+    description:
+      "Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "Optimised Traning Program",
+    title: "Leadership Development",
+    description:
+      "Develop leadership skills with practical insights and strategies.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+  {
+    id: "Improved Communication And Collaboration",
+    title: "Career Alignment",
+    description:
+      "Discover career paths that align with your strengths and interests.Focuses on concrete, tangible information and present realities.Focuses on concrete, tangible information and present realities.",
+  },
+];
+
+export const LearningStyleTabs = [
+  { id: "LearningStyle", label: "Learning Style" },
+  { id: "Characteristics", label: "Characteristics" },
+  { id: "Preferences", label: "Preferences" },
+  { id: "Strengths", label: "Strengths" },
+  { id: "Enviornment", label: "Learning Environment" },
+  { id: "WorkPlaceManifestation", label: "Workplace Manifestation" },
+  { id: "Influence", label: "Influence on Job Performance" },
+  { id: "Suggestion", label: "Suggestions" },
+  { id: "AdviceStatergies", label: "Advice & Strategies" },
+  { id: "Conclusion", label: "Conclusion" },
+];
+
+export const LearningStyleCharacterstics = [
+  "Manual dexterity and technical profiency. Manual dexterity and technical profiency. Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency. Manual dexterity and technical profiency. Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency. Manual dexterity and technical profiency. Manual dexterity and technical profiency.",
+  "Manual dexterity and technical profiency. Manual dexterity and technical profiency. Manual dexterity and technical profiency.",
+];

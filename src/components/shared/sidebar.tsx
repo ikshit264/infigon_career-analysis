@@ -45,7 +45,7 @@ export default function Sidebar({ items }: SidebarProps) {
     <div className="w-64 border-r border-gray-200 bg-white">
       <nav className="flex flex-col p-4">
         {items.map((item) => {
-          const isActive = pathname === item.path
+          const isActive = pathname.includes(item.path)
           const isExpanded = expandedItems[item.id]
           const hasSubItems = item.subItems && item.subItems.length > 0
 
@@ -77,7 +77,7 @@ export default function Sidebar({ items }: SidebarProps) {
                     className="ml-4 mt-1"
                   >
                     {item.subItems!.map((subItem) => {
-                      const isSubActive = pathname === subItem.path
+                      const isSubActive = pathname.includes(subItem.path)
                       const hasSubSubItems = subItem.subSubItems && subItem.subSubItems.length > 0
                       const isSubExpanded = expandedItems[subItem.id]
 
@@ -108,7 +108,7 @@ export default function Sidebar({ items }: SidebarProps) {
                                 className="ml-4 mt-1"
                               >
                                 {subItem.subSubItems!.map((subSubItem) => {
-                                  const isSubSubActive = pathname === subSubItem.path
+                                  const isSubSubActive = pathname.includes(subSubItem.path)
 
                                   return (
                                     <Link

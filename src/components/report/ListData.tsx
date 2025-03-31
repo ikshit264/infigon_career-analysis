@@ -9,7 +9,7 @@ const ListData = ({ Data, Title, icon }: { Data: string[]; Title: string; icon?:
         {Data.map((statement, index) => (
           <div key={index} className="p-1 border rounded flex gap-4 items-center">
             <div>
-              {icon ? React.createElement(icon, { size: 30 }) : <Dot size={40} />}
+              {icon ? React.createElement(icon, { size: 25 }) : <Dot size={40} />}
             </div>
             <span>{statement}</span>
           </div>

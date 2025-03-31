@@ -24,10 +24,27 @@ interface TestSidebarProps {
 }
 
 export default function TestSidebar({ tests }: TestSidebarProps) {
-  const [activeTest, setActiveTest] = useState<number | null>(1);
+  const pathname = usePathname();
+  
+  // Determine active test ID based on the pathname
+  const getActiveTestFromPathname = () => {
+    for (const test of tests) {
+      if (pathname.startsWith(test.path)) {
+        return test.id;
+      }
+    }
+    return null;
+  };
+  
+  const [activeTest, setActiveTest] = useState<number | null>(getActiveTestFromPathname());
   const [isOpen, setIsOpen] = useState(false); // Mobile toggle state
 
-  // ✅ Ref to detect clicks outside
+  // Update active test when pathname changes
+  useEffect(() => {
+    setActiveTest(getActiveTestFromPathname());
+  }, [pathname]);
+
+  // Ref to detect clicks outside
   const sidebarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -48,16 +65,17 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
 
   return (
     <>
-      {/* ✅ Desktop Sidebar */}
+      {/* Desktop Sidebar */}
       <div className="hidden md:block w-56 border-r border-gray-200 bg-white">
         <SidebarContent
           tests={tests}
           activeTest={activeTest}
           setActiveTest={setActiveTest}
+          pathname={pathname}
         />
       </div>
 
-      {/* ✅ Mobile Floating Button */}
+      {/* Mobile Floating Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 left-6 z-50 flex items-center justify-center rounded-full bg-blue-600 p-4 shadow-lg text-white md:hidden"
@@ -65,11 +83,11 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
         📊 {/* You can replace this with an icon */}
       </button>
 
-      {/* ✅ Mobile Sidebar (Slide-in Animation) */}
+      {/* Mobile Sidebar (Slide-in Animation) */}
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* ✅ Click outside detection */}
+            {/* Click outside detection */}
             <div className="fixed inset-0 z-40 bg-black/30 md:hidden"></div>
 
             <motion.div
@@ -85,6 +103,7 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
                 activeTest={activeTest}
                 setActiveTest={setActiveTest}
                 closeMenu={() => setIsOpen(false)}
+                pathname={pathname}
               />
             </motion.div>
           </>
@@ -94,32 +113,35 @@ export default function TestSidebar({ tests }: TestSidebarProps) {
   );
 }
 
-// ✅ Sidebar Content Component (Reused for both Desktop & Mobile)
+// Sidebar Content Component (Reused for both Desktop & Mobile)
 function SidebarContent({
   tests,
   activeTest,
   setActiveTest,
   closeMenu,
+  pathname,
 }: {
   tests: TestItem[];
   activeTest: number | null;
   setActiveTest: (id: number | null) => void;
   closeMenu?: () => void;
+  pathname: string;
 }) {
-  const pathname = usePathname();
-
   return (
     <div className="flex flex-col p-4 h-full">
       {tests.map((test) => {
         const isActive = activeTest === test.id;
+        
+        // Auto-expand the active test section
+        const shouldExpand = isActive || pathname.startsWith(test.path);
 
         return (
           <div key={test.id} className="mb-4">
             <button
-              onClick={() => setActiveTest(isActive ? null : test.id)}
+              onClick={() => setActiveTest(shouldExpand ? null : test.id)}
               className={cn(
                 "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium",
-                isActive ? "bg-blue-50 text-blue-700" : "text-gray-700 hover:bg-gray-100"
+                shouldExpand ? "bg-blue-50 text-blue-700" : "text-gray-700 hover:bg-gray-100"
               )}
             >
               <div className="mr-2 flex h-8 w-8 items-center justify-center">
@@ -136,7 +158,7 @@ function SidebarContent({
               </div>
             </button>
 
-            {isActive && (
+            {shouldExpand && (
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: "auto", opacity: 1 }}
@@ -145,7 +167,7 @@ function SidebarContent({
                 className="ml-4 mt-1"
               >
                 {test.subItems.map((subItem) => {
-                  const isSubActive = pathname.includes(subItem.path);
+                  const isSubActive = pathname === subItem.path;
 
                   return (
                     <Link

@@ -1,33 +1,37 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { cn } from "@/lib/utils"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 interface TabNavigationProps {
   tabs: {
-    id: string
-    label: string
-  }[]
-  defaultTab?: string
-  onChange?: (tabId: string) => void
+    id: string;
+    label: string;
+  }[];
+  defaultTab?: string;
+  onChange?: (tabId: string) => void;
 }
 
-export default function TabNavigation({ tabs, defaultTab, onChange }: TabNavigationProps) {
-  const [activeTab, setActiveTab] = useState(defaultTab || tabs[0].id)
+export default function TabNavigation({
+  tabs,
+  defaultTab,
+  onChange,
+}: TabNavigationProps) {
+  const [activeTab, setActiveTab] = useState(defaultTab || tabs[0].id);
 
   const handleTabChange = (tabId: string) => {
-    setActiveTab(tabId)
+    setActiveTab(tabId);
     if (onChange) {
-      onChange(tabId)
+      onChange(tabId);
     }
-  }
+  };
 
   return (
-    <div className="border-b border-gray-200 max-w-full overflow-x-auto scrollbar-hide">
-      <div className="flex space-x-8 flex-nowrap whitespace-nowrap">
+    <div className="border-b border-gray-200 max-w-full overflow-x-auto scrollbar-hide" style={{ scrollBehavior: "smooth" }}>
+      <div className="flex space-x-8 flex-nowrap whitespace-nowrap custom-scrollbar">
         {tabs.map((tab) => {
-          const isActive = activeTab === tab.id
+          const isActive = activeTab === tab.id;
 
           return (
             <button
@@ -35,7 +39,7 @@ export default function TabNavigation({ tabs, defaultTab, onChange }: TabNavigat
               onClick={() => handleTabChange(tab.id)}
               className={cn(
                 "relative py-4 text-sm font-medium transition-colors",
-                isActive ? "text-blue-700" : "text-gray-500 hover:text-gray-700",
+                isActive ? "text-blue-700" : "text-gray-500 hover:text-gray-700"
               )}
             >
               {tab.label}
@@ -49,9 +53,9 @@ export default function TabNavigation({ tabs, defaultTab, onChange }: TabNavigat
                 />
               )}
             </button>
-          )
+          );
         })}
       </div>
     </div>
-  )
+  );
 }

@@ -22,7 +22,7 @@ export default function CareerLibraryPage() {
   })
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 ">
       <h1 className="mb-6 text-2xl font-bold">Career Library</h1>
 
       <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -37,14 +37,14 @@ export default function CareerLibraryPage() {
           />
         </div>
 
-        <div className="flex flex-wrap gap-2">
-          <Button className={clsx("px-4 py-2 rounded-md", selectedCategory === null ? "bg-blue-600 text-white" : "bg-gray-200")} onClick={() => setSelectedCategory(null)}>
+        <div className="flex flex-wrap gap-2 min-w-full justify-center">
+          <Button className={clsx("px-4 py-2 rounded-md text-black", selectedCategory === null ? "bg-blue-600 text-white" : "bg-gray-200")} onClick={() => setSelectedCategory(null)}>
             All
           </Button>
           {categories.map((category) => (
             <Button
               key={category}
-              className={clsx("px-4 py-2 rounded-md", selectedCategory === category ? "bg-blue-600 text-white" : "bg-gray-200")}
+              className={clsx("px-4 py-2 rounded-md text-black", selectedCategory === category ? "bg-blue-600 text-white" : "bg-gray-200")}
               onClick={() => setSelectedCategory(category)}
             >
               {category}

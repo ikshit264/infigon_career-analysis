@@ -9,25 +9,34 @@ const TopBar = () => {
   const [selectedCareer, setSelectedCareer] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center">
       {/* ✅ Report Header */}
-      <div className="border-b border-gray-200 p-6">
-        <h1 className="mb-2 text-2xl font-bold text-center md:text-left">
-          Your Career Analysis Report
-        </h1>
-        <p className="text-sm text-gray-600 text-center md:text-left">
-          {userReport.description}
-        </p>
+      <div className="flex justify-evenly items-center sm:flex-row flex-col border-b border-gray-200 ">
+        <div className="p-6 flex flex-col ">
+          <h1 className="mb-2 text-2xl font-bold text-center md:text-left">
+            Your Career Analysis Report
+          </h1>
+          <p className="text-sm text-gray-500 ">{userReport.description}</p>
+        </div>
+        <div className="p-6 flex flex-col md:flex-row items-center gap-4 ">
+          <div className="flex flex-col justify-center gap-2">
+            <h1 className=" text-lg font-bold text-center md:text-left">
+              Want To Speak To An Expert Career Counsellor?
+            </h1>
+            <p className="text-sm text-gray-500">
+              Explore a list of 1000+ Expert Career Counsellors near you!
+            </p>
+          </div>
+          <button className="px-2 p-1 rounded bg-gray-300 ">see All</button>
+        </div>
       </div>
 
-      {/* ✅ Career Options & Button */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 py-4">
-        {/* ✅ Left Side - Career Options */}
+      <div className="flex flex-col md:flex-row items-center justify-evenly w-full gap-4 py-4">
         <div className="flex flex-col md:flex-row items-center md:basis-1/2 w-full gap-4 md:justify-end">
-          <span className="text-sm font-medium text-center md:text-left">
+          <span className="text-sm font-medium text-center">
             Your TOP 3 Career Options
           </span>
-          <div className="flex flex-wrap justify-center md:justify-start gap-2">
+          <div className="flex flex-wrap items-center justify-center gap-2">
             {careerOptions.map((option) => (
               <CareerOptionCard
                 key={option.id}
