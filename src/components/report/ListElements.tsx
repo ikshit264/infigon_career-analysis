@@ -14,7 +14,7 @@ interface ListWithIconsProps {
 const ListElements: React.FC<ListWithIconsProps> = ({ items }) => {
   return (
     <div className=" flex items-center justify-center pb-5">
-      <ul className="flex flex-col gap-4 border-1 border-gray-300 rounded-xl p-3 mx-1 lg:m-0 lg:max-w-[80%] md:max-w-[90%]">
+      <ul className="flex flex-col gap-4 border-1 border-gray-300 rounded-xl p-3 mx-1 lg:m-0 lg:max-w-[100%] md:max-w-[90%]">
         {items.map((item, index) => (
           <li key={index} className="flex items-center gap-3 justify-start ">
             {/* Render Icon or Default Symbol */}

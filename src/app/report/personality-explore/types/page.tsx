@@ -9,15 +9,15 @@ export default function PersonalityTypesPage() {
         <div className="p-6">
           <h2 className="mb-6 text-xl font-bold text-blue-700">Personality Types</h2>
 
-          <div className="flex flex-wrap p-4 items-center justify-evenly">
+          <div className="flex flex-wrap p-4 items-start justify-evenly">
             {personalityTypes.map((type) => (
-              <div key={type.id} className=" overflow-hidden lg:w-[22%]">
-                <div className="bg-blue-50 p-4 flex justify-center rounded-lg">
+              <div key={type.id} className=" overflow-hidden items-center lg:w-[22%]">
+                <div className="bg-blue-50 flex justify-center rounded-lg">
                   <Image
-                    src={type.image || "/placeholder.svg"}
+                    src={ "/Logos/logo1.png"}
                     alt={type.name}
-                    width={80}
-                    height={80}
+                    width={400}
+                    height={100}
                     className=""
                   />
                 </div>

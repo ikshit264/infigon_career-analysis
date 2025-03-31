@@ -58,7 +58,7 @@ export default function CareerLibraryPage() {
           <div key={career.id} className="rounded-lg border border-gray-200 shadow-md p-4">
             <div className="flex items-start gap-4">
               <div className="h-16 w-16 overflow-hidden rounded-md">
-                <Image src={career.image || "/placeholder.svg"} alt={career.title} width={64} height={64} />
+                <Image src={"/placeholder.png"} alt={career.title} width={64} height={64} />
               </div>
               <div>
                 <h2 className="text-lg font-semibold">{career.title}</h2>

@@ -4,13 +4,12 @@ import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 type TestItem = {
   id: number;
   title: string;
-  icon: string;
+  icon: React.ReactElement;
   path: string;
   subItems: {
     id: string;
@@ -152,13 +151,8 @@ function SidebarContent({
                   : "text-gray-700 hover:bg-gray-100"
               )}
             >
-              <div className="mr-2 flex h-8 w-8 items-center justify-center">
-                <Image
-                  src={test.icon || "/placeholder.svg?height=32&width=32"}
-                  alt={test.title}
-                  width={32}
-                  height={32}
-                />
+              <div className="mr-2 flex h-6 w-6 items-center justify-center">
+                {test.icon}
               </div>
               <div className="text-left">
                 <div className="text-xs text-gray-500">TEST {test.id}</div>

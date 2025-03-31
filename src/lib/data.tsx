@@ -1,4 +1,5 @@
 import { ThumbsUp } from "lucide-react";
+import { Book, Brain, Compass, Heart, Lightbulb } from "lucide-react";
 
 export const sidebarItems = [
   {
@@ -137,7 +138,7 @@ export const testSidebarItems = [
   {
     id: 1,
     title: "Personality Explorer",
-    icon: "/placeholder.svg?height=32&width=32",
+    icon: <Compass size={32} />,
     path: "/report/personality-explore",
     subItems: [
       {
@@ -160,7 +161,7 @@ export const testSidebarItems = [
   {
     id: 2,
     title: "Interest Explorer",
-    icon: "/placeholder.svg?height=32&width=32",
+    icon: <Book size={32} />,
     path: "/report/interest-explore",
     subItems: [
       {
@@ -183,7 +184,7 @@ export const testSidebarItems = [
   {
     id: 3,
     title: "Career Motivators",
-    icon: "/placeholder.svg?height=32&width=32",
+    icon: <Brain size={32} />,
     path: "/report/career-motivator",
     subItems: [
       {
@@ -206,7 +207,7 @@ export const testSidebarItems = [
   {
     id: 4,
     title: "Emotional Intelligence",
-    icon: "/placeholder.svg?height=32&width=32",
+    icon: <Heart size={32} />,
     path: "/report/emotional-intelligence",
     subItems: [
       {
@@ -229,7 +230,7 @@ export const testSidebarItems = [
   {
     id: 5,
     title: "Learning Styles",
-    icon: "/placeholder.svg?height=32&width=32",
+    icon: <Lightbulb size={32} />,
     path: "/report/learning-style",
     subItems: [
       {
@@ -283,6 +284,7 @@ export const userReport = {
     { id: 2, title: "Doctor" },
     { id: 3, title: "Teacher" },
   ],
+  image : '/Logos/logo1.png',
   personalityType: {
     title: "Architect",
     traits: ["INTJ Personality", "STRATEGIC", "ANALYTICAL", "INDEPENDENT"],
@@ -629,31 +631,31 @@ export const personality_characteristics = [
     id: 1,
     title: "Strategic and Analytical",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are deep thinkers who excel at analyzing complex problems and devising effective solutions. With a keen eye for patterns and trends, they make well-informed decisions based on logic and data. Their ability to strategize helps them succeed in leadership roles, research, and problem-solving tasks. They often enjoy intellectual debates and are constantly seeking ways to improve efficiency and effectiveness in various aspects of life.",
   },
   {
     id: 2,
     title: "Independent and Visionary",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "These individuals are forward-thinkers who march to the beat of their own drum. They value their freedom and prefer to carve their own paths rather than follow conventional norms. With a strong sense of creativity and innovation, they often pioneer new ideas and projects. Their visionary mindset allows them to see the bigger picture, making them excellent entrepreneurs, inventors, and thought leaders. They thrive in environments that encourage originality and self-expression.",
   },
   {
     id: 3,
     title: "Logical and Rational",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "Highly objective and practical, they prioritize facts and reason over emotions when making decisions. They have a methodical approach to problem-solving and rely on evidence-based thinking. Their ability to remain composed under pressure makes them excellent in technical fields, law, and strategic planning. They are natural skeptics who prefer to question assumptions and base their beliefs on solid proof rather than intuition or emotions.",
   },
   {
     id: 4,
-    title: "Goal Oriented and Determined",
+    title: "Goal-Oriented and Determined",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are highly motivated individuals who set ambitious goals and pursue them with unwavering determination. Their strong work ethic and perseverance make them successful in achieving what they set their minds to. They are disciplined, focused, and often inspire others with their drive. Whether in personal growth, academics, or career pursuits, they excel in structured environments where their efforts lead to tangible results. Obstacles and setbacks do not deter them; instead, they see challenges as opportunities to grow stronger.",
   },
   {
     id: 5,
     title: "Confident and Assertive",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They possess a strong sense of self-assurance and are not afraid to express their opinions or stand up for their beliefs. Their natural confidence allows them to take charge in leadership roles, influence others, and navigate social situations with ease. They are excellent communicators who can inspire and motivate those around them. Their assertiveness helps them set clear boundaries and advocate for their needs while also respecting the perspectives of others. They thrive in roles that require negotiation, public speaking, or management.",
   },
 ];
 
@@ -695,29 +697,41 @@ export const WorkStyleData = [
     id: 1,
     title: "Strategic",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They have a big-picture mindset and excel at planning and executing long-term goals. These individuals are forward-thinking and thrive in environments where they can anticipate challenges and devise innovative solutions. They are excellent at setting priorities, managing resources effectively, and making calculated decisions that align with their vision. Their ability to connect ideas and foresee potential outcomes makes them strong leaders, planners, and problem-solvers in any organization.",
   },
   {
     id: 2,
     title: "Analytical",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They approach problems methodically, breaking down complex issues into manageable parts to find logical and data-driven solutions. These individuals are detail-oriented, highly observant, and enjoy diving deep into facts and figures. They excel in roles that require critical thinking, research, and precision. Their ability to remain objective and consider multiple perspectives helps them make well-informed decisions. They are invaluable in areas such as data analysis, research, engineering, and finance.",
   },
   {
     id: 3,
     title: "Independent",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They prefer working autonomously and take ownership of their responsibilities without constant supervision. These individuals are self-motivated, resourceful, and thrive in environments that allow them the freedom to explore their own methods. They are highly disciplined and value efficiency, often seeking innovative ways to complete tasks. Their ability to manage their workload and think outside the box makes them ideal for entrepreneurship, freelancing, and leadership roles where initiative is crucial.",
   },
   {
     id: 4,
-    title: "Results Driven",
+    title: "Results-Driven",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "They are highly focused on achieving goals and delivering measurable outcomes. These individuals are motivated by success and take a proactive approach to their work, ensuring efficiency and high performance. They thrive in fast-paced environments where productivity and achievement are valued. Their ability to set clear objectives, track progress, and stay committed to deadlines makes them excellent in sales, project management, business development, and competitive fields where tangible results matter.",
   },
 ];
 
-export const PreferencesData = [
+export const PreferencesData = {
+  Title: "Intellectual Stimulation",
+  Data:[
+    "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+    "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+  ],
+  icon: <ThumbsUp />,
+}
+
+export const PreferencesData_1 = [
   {
     title: "Intellectual Stimulation",
     content:
@@ -745,6 +759,7 @@ export const PreferencesData = [
     icon: <ThumbsUp />,
   },
 ];
+
 
 export const InterPersonalInteraction = [
   {
@@ -802,25 +817,25 @@ export const RoleData = [
     id: 1,
     title: "Strategic Planning and Management",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "Individuals in this role excel at setting long-term goals, creating structured plans, and ensuring that resources are effectively allocated to achieve success. They have a keen ability to anticipate future trends, analyze risks, and develop contingency plans. These professionals thrive in decision-making positions, helping organizations navigate uncertainty while maintaining efficiency and profitability. Their strong leadership, organizational, and problem-solving skills make them crucial for executive roles, operations management, and corporate strategy development.",
   },
   {
     id: 2,
     title: "Research and Analysis",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "This role requires a deep curiosity for uncovering insights, analyzing data, and making informed decisions based on evidence. Individuals in this category have strong problem-solving skills and an analytical mindset, allowing them to break down complex information into actionable strategies. They are detail-oriented and thrive in roles that involve conducting experiments, interpreting trends, and making data-driven recommendations. Their expertise is valuable in fields such as market research, scientific research, business intelligence, and financial analysis.",
   },
   {
     id: 3,
     title: "Innovation and Technology",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "Individuals in this role are forward-thinkers who drive change through new ideas and technological advancements. They thrive in dynamic environments where creativity, experimentation, and continuous improvement are encouraged. Whether developing cutting-edge software, designing innovative products, or optimizing systems for efficiency, they have a passion for problem-solving and innovation. Their adaptability and technical expertise make them ideal for roles in software development, artificial intelligence, engineering, and product design.",
   },
   {
     id: 4,
     title: "Leadership and Entrepreneurship",
     content:
-      "They are friendly, approachable, & enjoy being around people. They are often seen as the 'hosts' of their social circles.",
+      "This role is suited for individuals who take initiative, inspire others, and are driven to create and lead successful ventures. They possess strong decision-making abilities, resilience, and a vision for growth. Whether leading a team, managing a business, or launching a startup, they are adept at taking calculated risks and adapting to challenges. Their skills in communication, strategic thinking, and resource management make them valuable in executive leadership, business ownership, and organizational development.",
   },
 ];
 

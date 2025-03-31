@@ -14,13 +14,13 @@ const Personality = () => {
         className="flex sm:flex-row flex-col items-center gap-6 px-2 sm:items-start"
       >
         {/* Image Container */}
-        <div className="flex flex-col  items-center rounded-lg bg-purple-50 p-6 shrink-0">
+        <div className="flex flex-col items-center rounded-lg bg-purple-50 shrink-0">
           <Image
-            src="/placeholder.svg?height=120&width=120"
+            src={userReport.image}
             alt="Architect"
-            width={120}
-            height={120}
-            className="rounded-lg"
+            width={200}
+            height={200}
+            className="rounded-lg "
           />
         </div>
 

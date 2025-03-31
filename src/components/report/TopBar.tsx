@@ -9,7 +9,7 @@ const TopBar = () => {
   const [selectedCareer, setSelectedCareer] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center pb-2">
       {/* ✅ Report Header */}
       <div className="flex justify-evenly items-center sm:flex-row flex-col border-b border-gray-200 ">
         <div className="p-6 flex flex-col ">
@@ -60,6 +60,7 @@ const TopBar = () => {
           <Button>Your Career Options</Button>
         </div>
       </div>
+      <div className="hidden md:block h-0.5 w-[99%] bg-gray-500"></div>
     </div>
   );
 };

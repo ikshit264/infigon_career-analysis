@@ -60,9 +60,9 @@ export default function SessionsPage() {
           >
             <div className="flex items-start">
               {/* Counsellor Image */}
-              <div className="mr-3 h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
+              <div className="mr-3 h-12 w-12 shrink-0 overflow-hidden rounded-lg sm:h-14 sm:w-14">
                 <Image
-                  src={session.counsellorImage || "/placeholder.svg"}
+                  src={"/placeholder.svg"}
                   alt={session.counsellorName}
                   width={56}
                   height={56}
